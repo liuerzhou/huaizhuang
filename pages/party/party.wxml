@@ -1,0 +1,10 @@
+
+<text>活动页面</text>
+<text bindtap="changeLogin"> {{ isLogin }}</text>
+<button  bindtap="clickMeToSignUp"> 我要报名 </button>
+
+<view wx:for="{{dataList}}"> {{index}} - {{item}} </view>
+
+<view bindtap="uploadImage">请上传图片</view>
+<image wx:for="{{imageList}}" src="{{item}}"></image>
+

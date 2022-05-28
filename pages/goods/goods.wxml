@@ -1,0 +1,8 @@
+<!--pages/goods/goods.wxml-->
+<text>pages/goods/goods.wxml</text>
+<view wx:for="{{list}}">
+	<view> 商品名：{{item.name}}, 价格：{{item.price}}</view>
+</view>
+<view bindtap='addGood'>添加太白</view>
+<view bindtap='updateGood'>修改太白价格</view>
+<view bindtap='removeGood'>删除太白</view>

@@ -1,0 +1,4 @@
+<!--pages/yuncun/yuncun.wxml-->
+<text>pages/yuncun/yuncun.wxml</text>
+<view bindtap="uploadImage">请上传图片</view>
+<image wx:for="{{imageList}}" src="{{item}}"></image>

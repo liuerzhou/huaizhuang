@@ -1,0 +1,22 @@
+
+<view  class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}"  bindtap="getUserProfile" > 授权登录 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+  </view>
+</view>
+
+<view bindtap="getLocalPath">{{localPath}}</view>
+<view bindtap="getrealAddress">{{realAddress}}</view>
+
+<view hidden="{{false}}">
+<view> 怀庄酒业</view>
+<image src="/static/index/index.png" ></image>
+<view>白酒、葡萄酒、应有尽有</view>
+<view>电话: 88888888 </view>
+<view>地址：神木市丈八东路</view>
+</view>
+
+
